@@ -1,216 +1,249 @@
-questions =  [
-  
-//Economic Regulation - Planned
-{"id": 0, "question": "In the current system, it is necessary for the government to intervene in the economy to protect consumers.", "effects": {"y": -5, "ay": 5}},
-{"id": 1, "question": "Without state intervention, monopolies would violate human rights.", "effects": {"y": -5, "ay": -5}},
-{"id": 2, "question": "Private organisations and corporations cannot be trusted and thus need regulating by the government.", "effects": {"x": -5, "ax": -5}},
-//Economic Regulation - Laissez Faire
-{"id": 3, "question": "Most corporations should be state-owned.", "effects": {"y": -5, "ay": 5}},
-{"id": 4, "question": "A free economy is the best tool for establishing wages and the price of labour.", "effects": {"y": -5, "ay": 5}},
-{"id": 5, "question": "The market regulates itself, unjust monopolies will not survive in a free market.", "effects": {"y": -5, "ay": -5}},
-{"id": 6, "question": "A regulated economy is more unfair for the people, when compared to a laissez-faire economy.", "effects": {"y": -5, "ay": -5}},
-{"id": 7, "question": "Taxation for the rich should be lowered, or even abolished.", "effects": {"y": -5, "ay": -5}},
-  
-//Economic System - Capitalism
-{"id": 8, "question": "Communism is an ideology that would never work in practice.", "effects": {"y": 5, "ay": 5}},
-{"id": 9, "question": "Freedom of business is the best practical way a society can prosper.", "effects": {"x": 5, "ax": 5}},
-{"id": 10, "question": "Governmental social programs should be replaced with private charities and organizations.", "effects": {"x": 5, "ax": 5}},
-{"id": 11, "question": "If wages exist at all, the minimum wage should be lowered or stagnated, or even abolished.", "effects": {"x": 5, "ax": 5}},
-{"id": 12, "question": "The market should be able to provide a majority of healthcare services.", "effects": {"x": 5, "ax": 5}},
-{"id": 13, "question": "Taxing citizens using involuntary methods can be considered an act of theft or agression.", "effects": {"x": 5, "ax": 5}},
-{"id": 14, "question": "The Justice System should be partially privatized, or even fully privatized.", "effects": {"x": 5, "ax": 5}},
-{"id": 15, "question": "Capitalism is the most practical and realistic economic system yet.", "effects": {"x": 5, "ax": 5}},
-{"id": 16, "question": "Inheritance is a legitimate form of wealth.", "effects": {"x": 5, "ax": 5}},
-{"id": 17, "question": "The harder you work, the more you progress up the social ladder.", "effects": {"x": 5, "ax": 5}},
-//Economic System - Socialism
-{"id": 18, "question": "From each according to his ability, to each according to his needs.", "effects": {"x": -5, "ax": -5}},
-{"id": 19, "question": "Oppression by corporations is a huge concern.", "effects": {"x": -5, "ax": -5}},
-{"id": 20, "question": "The means of production should belong to the workers.", "effects": {"x": -5, "ax": -5}},
-{"id": 21, "question": "Roads and transportation should be publicly owned.", "effects": {"x": -5, "ax": -5}},
-{"id": 22, "question": "Economic inequality is still a very serious problem.", "effects": {"x": -5, "ax": -5}},
-{"id": 23, "question": "Paying workers with food is preferable than paying with money.", "effects": {"x": -5, "ax": -5}},
-  
-//Governmental System - Autocracy
-{"id": 24, "question": "An autocracy is more beneficial than any democratic system.", "effects": {"y": 5, "bx": -5}},
-{"id": 25, "question": "A beneficial democracy requires high levels of education.", "effects": {"y": 5, "bx": -5}},
-{"id": 26, "question": "If the electoral college exists at all, electoral votes needs to be adjusted so that different states/regions get representation.", "effects": {"y": 5, "bx": -5}},
-{"id": 27, "question": "Democracy increases the risks of instability and corruption.", "effects": {"y": 5, "bx": -5}},
-{"id": 28, "question": "Only allowing scientific experts to run for an election is preferable than that of a regular democracy.", "effects": {"y": 5, "bx": -5}},
-//Governmental System - Democracy
-{"id": 29, "question": "Liberal democracy is the least worst system for leadership.", "effects": {"y": -5, "bx": 5}},
-  
-//Governmental Size - Authoritarian
-{"id": 30, "question": "Violence is not acceptable when protesting a government.", "effects": {"y": 5, "by": 5}},
-{"id": 31, "question": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.", "effects": {"y": 5, "by": 5}},
-{"id": 32, "question": "When a threat arrives, some liberties should be sacrificed in order to maintain stability and prosperity.", "effects": {"y": 5, "by": 5}},
-{"id": 33, "question": "Strength and substantial authority is required for a successful and efficient government.", "effects": {"y": 5, "by": 5}},
-{"id": 34, "question": "Many problems in society are often solved quickly and easily by a large government.", "effects": {"y": 5, "by": 5}},
-{"id": 35, "question": "If a person has nothing to hide, that person has nothing to fear.", "effects": {"y": 5, "by": 5}},
-{"id": 36, "question": "Martial law is appropiate if a nation is undergoing a crisis.", "effects": {"y": 5, "by": 5}},
-//Governmental Size - Libertarian
-{"id": 37, "question": "Any action that does not impose agression on any person should not be considered a criminal offence.", "effects": {"y": -5, "by": -5}},
-{"id": 38, "question": "All authority should be questioned.", "effects": {"y": -5, "by": -5}},
-{"id": 39, "question": "The existence of the state is a violation of our liberty and rights.", "effects": {"y": -5, "by": -5}},
-{"id": 40, "question": "Any drug should be legal as long as other people don't have to take the consequences.", "effects": {"y": -5, "by": -5}},
-{"id": 41, "question": "Whether or not the state is democratic, it is still oppresive.", "effects": {"y": -5, "by": -5}},
-{"id": 42, "question": "Environmental activism and social pressure are a more effective way of saving the environment when compared to government action.", "effects": {"y": -5, "by": -5}},
-{"id": 43, "question": "Governments should stay out of the people's daily lives.", "effects": {"y": -5, "by": -5}},
-{"id": 44, "question": "The police was not made to protect the people, but to uphold the status-quo by force.", "effects": {"y": -5, "by": -5}},
-{"id": 45, "question": "Victimless crimes should not be considered 'crimes'.", "effects": {"y": -5, "by": -5}},
-{"id": 46, "question": "Jury nullification should be legal.", "effects": {"y": -5, "by": -5}},
+questions = [
 
-//Diplomatic Applicability - Universal
-{"id": 47, "question": "My political values should be spread as much as possible.", "effects": {"cx": -5}},
-{"id": 48, "question": "Countries with authoritarian governments should be denounced.", "effects": {"cx": -5}},
-{"id": 49, "question": "Globalization is inevitable.", "effects": {"cx": -5}},
-{"id": 50, "question": "Cultures should learn from each others to make progress quicker and easier.", "effects": {"cx": -5}},
-{"id": 51, "question": "Violent action should be made to countries that violate basic human rights.", "effects": {"cx": -5}},
-//Diplomatic Applicability - Particular
-{"id": 52, "question": "Different countries and cultures have different preferences for the type of government.", "effects": {"cx": 5}},
-{"id": 53, "question": "All countries should solve its internal issues before focusing on external issues.", "effects": {"cx": 5}},
-{"id": 54, "question": "Conflict should be avoided as much as possible.", "effects": {"cx": 5}},
+    // Экономическое регулирование - Плановая экономика
+    {"id": 0, "question": "В текущей системе необходимо, чтобы государство вмешивалось в экономику для защиты потребителей.", "effects": {"y": -5, "ay": 5}},
+    {"id": 1, "question": "Без вмешательства государства монополии нарушали бы права человека.", "effects": {"y": -5, "ay": -5}},
+    {"id": 2, "question": "Частные организации и корпорации нельзя оставлять без контроля, поэтому государство должно их регулировать.", "effects": {"x": -5, "ax": -5}},
 
-//Diplomatic Relations - Nationalism
-{"id": 55, "question": "If I were to support international organizations at all, I will only support international organizations that align with my political beliefs.", "effects": {"cy": 5}},
-{"id": 56, "question": "My nation's interests should be considered more important than that of other nations.", "effects": {"cy": 5}},
-{"id": 57, "question": "National sovereignty is very important.", "effects": {"cy": 5}},
-{"id": 58, "question": "It's a good thing that Nationalism is on the rise.", "effects": {"cy": 5}},
-{"id": 59, "question": "If a certain group has a very strong group identity, an independence referendum should be held.", "effects": {"cy": 5}},
-{"id": 60, "question": "Each nation should govern itself with minimal or no foreign intervention.", "effects": {"cy": 5}},
-{"id": 61, "question": "My nation is great.", "effects": {"cy": 5}},
-//Diplomatic Relations - Globalism
-{"id": 62, "question": "A global nation where all countries are united will be beneficial to humanity.", "effects": {"cy": -5}},
-{"id": 63, "question": "A global organization that is generally beneficial should hold a substantial amount of power.", "effects": {"cy": -5}},
-{"id": 64, "question": "I support Regional Unions, like the European Union.", "effects": {"cy": -5}},
-{"id": 65, "question": "It's important that we put aside our differences and cooperate as a single community.", "effects": {"cy": -5}},
-{"id": 66, "question": "Military spending is a waste of money.", "effects": {"cy": -5}},
-{"id": 67, "question": "Borders around the world should be less strict.", "effects": {"cy": -5}},
-  
-//Societal Tradition - Tradition
-{"id": 68, "question": "It's important that we maintain our culture and tradition.", "effects": {"dx": 5}},
-{"id": 69, "question": "Tradition is vital for society.", "effects": {"dx": 5}},
-{"id": 70, "question": "I consider abortion as a form of murder.", "effects": {"dx": 5}},
-{"id": 71, "question": "Traditional medicines are often more effective than modern medicines.", "effects": {"dx": 5}},
-{"id": 72, "question": "A person cannot be moral without a religion or belief.", "effects": {"dx": 5}},
-//Societal Tradition - Progress
-{"id": 73, "question": "Religion is mostly fictional.", "effects": {"dx": -5}},
-{"id": 74, "question": "Traditions are of no value on their own.", "effects": {"dx": -5}},
-{"id": 75, "question": "I support the LGBT Community.", "effects": {"dx": -5}},
-{"id": 76, "question": "I support the Black Lives Matter organization.", "effects": {"dx": -5}},
-{"id": 77, "question": "If taxation exists, churches should be taxed the same way other institutions are taxed.", "effects": {"dx": -5}},
-{"id": 78, "question": "Evolution is a fact.", "effects": {"dx": -5}},
+    // Экономическое регулирование - Лаиссез-фэр
+    {"id": 3, "question": "Большинство корпораций должно быть государственной собственностью.", "effects": {"y": -5, "ay": 5}},
+    {"id": 4, "question": "Свободная экономика — лучший способ установить справедливую заработную плату и стоимость труда.", "effects": {"y": -5, "ay": 5}},
+    {"id": 5, "question": "Рынок саморегулируется, несправедливые монополии не выживут в условиях свободного рынка.", "effects": {"y": -5, "ay": -5}},
+    {"id": 6, "question": "Регулируемая экономика менее справедлива по сравнению с экономикой свободного рынка.", "effects": {"y": -5, "ay": -5}},
+    {"id": 7, "question": "Налоги на богатых должны быть снижены или даже полностью отменены.", "effects": {"y": -5, "ay": -5}},
 
-//Societal Change - Conserve
-{"id": 79, "question": "Rapid change often leads to the worsening of people's lives.", "effects": {"dy": 5}},
-{"id": 80, "question": "Reforms should happen gradually and slowly.", "effects": {"dy": 5}},
-{"id": 81, "question": "All reforms should happen without violence.", "effects": {"dy": 5}},
-{"id": 82, "question": "It's sometimes moral to crush a revolution or protest by force.", "effects": {"dy": 5}},
-{"id": 83, "question": "Political leaders should change the system as little as possible during their term.", "effects": {"dy": 5}},
-//Societal Change - Reform
-{"id": 84, "question": "Thinking in the long term is more important than thinking in the short term.", "effects": {"dy": -5}},
-{"id": 85, "question": "The current political system in my nation is flawed.", "effects": {"dy": -5}},
-{"id": 86, "question": "We should avoid delaying political reform and change.", "effects": {"dy": -5}},
-{"id": 87, "question": "If the cause is justified in my political ideology and peaceful reform does not work, revolution and aggressive measures should be considered.", "effects": {"dy": -5}},
+    // Экономическая система - Капитализм
+    {"id": 8, "question": "Коммунизм — это идеология, которая никогда не будет работать на практике.", "effects": {"y": 5, "ay": 5}},
+    {"id": 9, "question": "Свобода бизнеса — лучший практический способ обеспечить процветание общества.", "effects": {"x": 5, "ax": 5}},
+    {"id": 10, "question": "Государственные социальные программы следует заменить частными благотворительными организациями.", "effects": {"x": 5, "ax": 5}},
+    {"id": 11, "question": "Если минимальная заработная плата вообще существует, её следует снизить, заморозить или полностью отменить.", "effects": {"x": 5, "ax": 5}},
+    {"id": 12, "question": "Рынок должен обеспечивать большинство услуг здравоохранения.", "effects": {"x": 5, "ax": 5}},
+    {"id": 13, "question": "Налогообложение граждан принудительными методами можно считать актом кражи или агрессии.", "effects": {"x": 5, "ax": 5}},
+    {"id": 14, "question": "Судебная система должна быть частично или даже полностью приватизирована.", "effects": {"x": 5, "ax": 5}},
+    {"id": 15, "question": "Капитализм — самая практичная и реалистичная экономическая система на сегодняшний день.", "effects": {"x": 5, "ax": 5}},
+    {"id": 16, "question": "Наследование является законной формой богатства.", "effects": {"x": 5, "ax": 5}},
+    {"id": 17, "question": "Чем больше вы работаете, тем выше поднимаетесь по социальной лестнице.", "effects": {"x": 5, "ax": 5}},
 
-//Technological Acceleration - Decelerate
-{"id": 88, "question": "Technology is negatively affecting modern society.", "effects": {"ex": -5}},
-{"id": 89, "question": "The Industrial Revolution and its consequences have been a disaster for the human race.", "effects": {"ex": -5}},
-{"id": 90, "question": "Usage of genetic modification for animals and plants should be minimized.", "effects": {"ex": -5}},
-{"id": 91, "question": "Modernity and social progress has led to a decrease of happiness, and often lacks meaning.", "effects": {"ex": -5}},
-{"id": 92, "question": "Society was better many years ago than it is today.", "effects": {"ex": -5}},
-//Technological Acceleration - Accelerate
-{"id": 93, "question": "If artifical intellegence can rule better than humans, then they should rule.", "effects": {"ex": -5}},
-{"id": 94, "question": "Genetic modification of food can avoid effects from droughts and floods.", "effects": {"ex": -5}},
-{"id": 95, "question": "Automation is very beneficial for society.", "effects": {"ex": -5}},
-{"id": 96, "question": "Genetic modification of humans is beneficial.", "effects": {"ex": -5}},
-{"id": 97, "question": "Societal progress is heading in the right direction.", "effects": {"ex": -5}},
-{"id": 98, "question": "We should embrace modern technology rather than avoiding it.", "effects": {"ex": -5}},
+    // Экономическая система - Социализм
+    {"id": 18, "question": "От каждого по способностям, каждому по потребностям.", "effects": {"x": -5, "ax": -5}},
+    {"id": 19, "question": "Угнетение со стороны корпораций — это огромная проблема.", "effects": {"x": -5, "ax": -5}},
+    {"id": 20, "question": "Средства производства должны принадлежать рабочим.", "effects": {"x": -5, "ax": -5}},
+    {"id": 21, "question": "Дороги и транспорт должны находиться в общественной собственности.", "effects": {"x": -5, "ax": -5}},
+    {"id": 22, "question": "Экономическое неравенство по-прежнему представляет серьёзную проблему.", "effects": {"x": -5, "ax": -5}},
+    {"id": 23, "question": "Оплата труда пищей предпочтительнее оплаты деньгами.", "effects": {"x": -5, "ax": -5}},
 
-//Technological Transhumanism - Transhumanism
-{"id": 99, "question": "Getting past physical limitations through technology would be beneficial to mankind.", "effects": {"ey": 5}},
-{"id": 100, "question": "Transhumanism will be inevitable in the near future, in most nations.", "effects": {"ey": 5}},
-{"id": 101, "question": "People are overly worrying about physical human modifications nowadays.", "effects": {"ey": 5}},
-//Technological Transhumanism - Primitivism
-{"id": 102, "question": "Technology that improves mental and physical capabilities shouldn't be used, in any political system.", "effects": {"ey": -5}},
-{"id": 103, "question": "The risks of transhumanism overweighs the benefits.", "effects": {"ey": -5}},
-{"id": 104, "question": "Transhumanism is not required in any country within the next 50 years.", "effects": {"ey": -5}},
+    // Государственное устройство - Автократия
+    {"id": 24, "question": "Автократия более выгодна, чем любая демократическая система.", "effects": {"y": 5, "bx": -5}},
+    {"id": 25, "question": "Эффективная демократия требует высокого уровня образования.", "effects": {"y": 5, "bx": -5}},
 
-//Law System - Civil Law
-{"id": 105, "question": "Law principles should be codified into a referable system.", "effects": {"fx": 5}},
-{"id": 106, "question": "If a law system exists, lawmakers and legal experts should hold more influence than judges.", "effects": {"fx": 5}},
-//Law System - Common Law
-{"id": 107, "question": "Courts should reference to other judicial decisions.", "effects": {"fx": -5}},
-{"id": 108, "question": "If judges and legislators exist, judges should hold more power than legislators.", "effects": {"fx": -5}},
-{"id": 109, "question": "If a decision cannot be made in courts, relevant cases in the past should be referenced.", "effects": {"fx": -5}},
-{"id": 110, "question": "Unusual cases cannot be decided with written law.", "effects": {"fx": -5}},
+    // Государственное устройство - Демократия
+    {"id": 29, "question": "Либеральная демократия — наименее худшая форма правления.", "effects": {"y": -5, "bx": 5}},
 
-//Law Focus - Punitive
-{"id": 111, "question": "A rehabilitative system is unjust.", "effects": {"fy": 5}},
-{"id": 112, "question": "Punishment should be valued, more than that of rehabilitation.", "effects": {"fy": 5}},
-{"id": 113, "question": "It's a waste of time trying to rehabilitate some criminals.", "effects": {"fy": 5}},
-{"id": 114, "question": "I support capital punishment.", "effects": {"fy": 5}},
-//Law Focus - Rehabilitive
-{"id": 115, "question": "Everybody deserves a second chance.", "effects": {"fy": -5}},
+    // Размер государства - Авторитаризм
+    {"id": 30, "question": "Насилие недопустимо при протестах против правительства.", "effects": {"y": 5, "by": 5}},
+    {"id": 31, "question": "Пожертвование некоторыми гражданскими свободами необходимо для защиты от терроризма.", "effects": {"y": 5, "by": 5}},
 
-//Cultural Hierarchy - Equality
-{"id": 116, "question": "A system of equal outcomes should be established.", "effects": {"gx": -5}},
-{"id": 117, "question": "People should be treated equally regardless of their groups and characteristics.", "effects": {"gx": -5}},
-//Cultural Hierarchy - Hierarchy
-{"id": 118, "question": "Even though equal opportunities can lead to equal outcomes, society should still focus on equal opportunities, and not equal outcomes.", "effects": {"gx": -5}},
-{"id": 119, "question": "Hierarchies will inevitably be formed in every society, at any time.", "effects": {"gx": -5}},
-{"id": 120, "question": "Any well-functioning society requries a hierarchy.", "effects": {"gx": -5}},
 
-//Cultural Assimilation - Monocultural
-{"id": 121, "question": "If we accept migrants into our borders, the migrants should be expected to assimilate into our culture.", "effects": {"gy": 5}},
-{"id": 122, "question": "Multiculturalism is unrealistic.", "effects": {"gy": 5}},
-{"id": 123, "question": "Some cultures are inherently suprerior to other cultures.", "effects": {"gy": 5}},
-//Cultural Assimilation - Multicultural
-{"id": 124, "question": "My nation should be more diverse.", "effects": {"gy": -5}},
-{"id": 125, "question": "Monoculturalism is disastrous for society.", "effects": {"gy": -5}},
-{"id": 126, "question": "Race and ethnicity should be unimportant for everyone.", "effects": {"gy": -5}},
+    {"id": 32, "question": "Когда появляется угроза, некоторые свободы должны быть ограничены для поддержания стабильности и процветания.", "effects": {"y": 5, "by": 5}},
+    {"id": 33, "question": "Сила и значительные полномочия необходимы для успешного и эффективного правительства.", "effects": {"y": 5, "by": 5}},
+    {"id": 34, "question": "Многие проблемы общества часто можно решить быстро и эффективно с помощью сильного государства.", "effects": {"y": 5, "by": 5}},
+    {"id": 35, "question": "Если человеку нечего скрывать, ему нечего бояться.", "effects": {"y": 5, "by": 5}},
+    {"id": 36, "question": "Военное положение уместно, если страна переживает кризис.", "effects": {"y": 5, "by": 5}},
 
-//Procedural Compromize - Compromize 
-{"id": 127, "question": "Compromises should be made in order to suit the needs of most people.", "effects": {"hx": -5}},
-{"id": 128, "question": "Compromizing can avoid unnecessary conflict.", "effects": {"hx": -5}},
-{"id": 129, "question": "Adopting radical ideas isn't possible unless compromizes are made.", "effects": {"hx": -5}},
+    // Размер государства - Либертарианство
+    {"id": 37, "question": "Любое действие, которое не наносит вреда другим, не должно считаться преступлением.", "effects": {"y": -5, "by": -5}},
+    {"id": 38, "question": "Любую власть следует ставить под сомнение.", "effects": {"y": -5, "by": -5}},
+    {"id": 39, "question": "Сам факт существования государства нарушает наши свободы и права.", "effects": {"y": -5, "by": -5}},
+    {"id": 40, "question": "Любые наркотики должны быть легальны, если последствия не касаются других людей.", "effects": {"y": -5, "by": -5}},
+    {"id": 41, "question": "Государство угнетает, независимо от того, демократическое оно или нет.", "effects": {"y": -5, "by": -5}},
+    {"id": 42, "question": "Экологический активизм и давление общества более эффективны для спасения окружающей среды, чем действия государства.", "effects": {"y": -5, "by": -5}},
+    {"id": 43, "question": "Правительства должны держаться подальше от повседневной жизни людей.", "effects": {"y": -5, "by": -5}},
+    {"id": 44, "question": "Полиция создана не для защиты людей, а для поддержания статус-кво с применением силы.", "effects": {"y": -5, "by": -5}},
+    {"id": 45, "question": "Преступления без жертв не должны считаться преступлениями.", "effects": {"y": -5, "by": -5}},
+    {"id": 46, "question": "Аннулирование приговора присяжными должно быть законным.", "effects": {"y": -5, "by": -5}},
 
-//Procedural Transition - Transitional
-{"id": 130, "question": "A transitional state should be made.", "effects": {"hy": 5}},
-//Procedural Transition - Direct
-{"id": 131, "question": "My ideology should be established as quick as possible.", "effects": {"hy": -5}},
-{"id": 132, "question": "My political ideals can be acheived within 10 years.", "effects": {"hy": -5}},
-  
-//Political Extremism - Radical
-{"id": 133, "question": "My ideology is sometimes considered 'extreme'.", "effects": {"ix": 5}},
-{"id": 134, "question": "Violence and Revolutions are required in order to establish my ideology.", "effects": {"ix": 5}},
-{"id": 135, "question": "The current mainstream societal attitudes are problematic.", "effects": {"ix": 5}},
-{"id": 136, "question": "My political views are very different from the current status quo.", "effects": {"ix": 5}},
+    // Дипломатические подходы - Универсализм
+    {"id": 47, "question": "Мои политические взгляды должны быть распространены как можно шире.", "effects": {"cx": -5}},
+    {"id": 48, "question": "Страны с авторитарными правительствами должны быть осуждены.", "effects": {"cx": -5}},
+    {"id": 49, "question": "Глобализация неизбежна.", "effects": {"cx": -5}},
+    {"id": 50, "question": "Культуры должны учиться друг у друга для достижения прогресса быстрее и проще.", "effects": {"cx": -5}},
+    {"id": 51, "question": "Следует применять насилие к странам, которые нарушают основные права человека.", "effects": {"cx": -5}},
 
-//Political Engagement - Apolitical
-{"id": 137, "question": "Politics is boring to me.", "effects": {"iy": -5}},
-{"id": 138, "question": "Nearly all politicians are evil and problematic, no matter what their political ideals are.", "effects": {"iy": -5}},
-{"id": 139, "question": "Politics should be avoided in daily life.", "effects": {"iy": -5}},
-//Political Engagement - Politicized
-{"id": 140, "question": "Politics is very important for society, and shouldn't be ignored.", "effects": {"iy": 5}},
-  
-//Collectivization
-{"id": 141, "question": "Most things can only be accomplished through a group.", "effects": {"ja": -5}},
-{"id": 142, "question": "If the current career system is being used, a person's personal and work life should stay seperate.", "effects": {"ja": 5}},
-{"id": 143, "question": "Being self-sufficient (as a person) is a positive trait.", "effects": {"ja": 5}},
-  
-//Revolution
-{"id": 144, "question": "Changing the status quo using violent methods is mostly unhelpful.", "effects": {"jb": 5}},
-{"id": 145, "question": "Pacifism is generally unrealistic when protesting a government.", "effects": {"jb": -5}},
-  
-//Idealism
-{"id": 146, "question": "Idealists are mostly unrealistic.", "effects": {"jc": 5}},
-{"id": 147, "question": "We should not ignore ideologies that seem radical, but has a chance of success.", "effects": {"jc": -5}},
-{"id": 148, "question": "We should be more optimistic towards a variety of different ideas.", "effects": {"jc": -5}},
+    // Дипломатические подходы - Партикуляризм
+    {"id": 52, "question": "Разные страны и культуры имеют разные предпочтения в отношении типа правительства.", "effects": {"cx": 5}},
+    {"id": 53, "question": "Каждая страна должна решить свои внутренние проблемы, прежде чем заниматься внешними.", "effects": {"cx": 5}},
+    {"id": 54, "question": "Конфликтов следует избегать как можно чаще.", "effects": {"cx": 5}},
 
-//Consequence
-{"id": 149, "question": "An eye for eye and a tooth for tooth.", "effects": {"jd": 5}},
-{"id": 150, "question": "We should judge an action based on its consequences.", "effects": {"jd": 5}},
-{"id": 151, "question": "An action should be seen as right or wrong through a set of rules and principles.", "effects": {"jd": -5}},
-{"id": 155, "question": "Intention is more important than consequence when judging an action.", "effects": {"jd": -5}},
-  
+    // Дипотношения - Национализм
+    {"id": 55, "question": "Если я и буду поддерживать международные организации, то только те, которые соответствуют моим политическим убеждениям.", "effects": {"cy": 5}},
+    {"id": 56, "question": "Интересы моей страны должны быть важнее интересов других стран.", "effects": {"cy": 5}},
+    {"id": 57, "question": "Национальный суверенитет имеет первостепенное значение.", "effects": {"cy": 5}},
+    {"id": 58, "question": "Рост национализма — это положительное явление.", "effects": {"cy": 5}},
+    {"id": 59, "question": "Если у определенной группы есть сильная коллективная идентичность, должен быть проведён референдум о независимости.", "effects": {"cy": 5}},
+    {"id": 60, "question": "Каждая нация должна управлять собой с минимальным или нулевым вмешательством извне.", "effects": {"cy": 5}},
+    {"id": 61, "question": "Моя страна велика.", "effects": {"cy": 5}},
+
+    // Дипотношения - Глобализм
+    {"id": 62, "question": "Глобальное объединение всех стран будет полезно для человечества.", "effects": {"cy": -5}},
+    {"id": 63, "question": "Глобальная организация, приносящая реальную пользу, должна обладать значительными полномочиями.", "effects": {"cy": -5}},
+    {"id": 64, "question": "Я поддерживаю региональные союзы, такие как Европейский Союз.", "effects": {"cy": -5}},
+    {"id": 65, "question": "Важно оставить разногласия и сотрудничать как единое сообщество.", "effects": {"cy": -5}},
+    {"id": 66, "question": "Военные расходы — пустая трата денег.", "effects": {"cy": -5}},
+    {"id": 67, "question": "Границы по всему миру должны быть менее строгими.", "effects": {"cy": -5}},
+
+    // Социальные традиции - Традиционализм
+    {"id": 68, "question": "Важно сохранять нашу культуру и традиции.", "effects": {"dx": 5}},
+    {"id": 69, "question": "Традиции жизненно важны для общества.", "effects": {"dx": 5}},
+    {"id": 70, "question": "Я считаю аборт формой убийства.", "effects": {"dx": 5}},
+    {"id": 71, "question": "Традиционная медицина часто эффективнее современной.", "effects": {"dx": 5}},
+    {"id": 72, "question": "Человек не может быть нравственным без религии или веры.", "effects": {"dx": 5}},
+
+    // Социальные традиции - Прогрессизм
+    {"id": 73, "question": "Религия — это в основном вымысел.", "effects": {"dx": -5}},
+    {"id": 74, "question": "Традиции сами по себе не имеют ценности.", "effects": {"dx": -5}},
+    {"id": 75, "question": "Я поддерживаю ЛГБТ-сообщество.", "effects": {"dx": -5}},
+    {"id": 76, "question": "Я поддерживаю организацию Black Lives Matter.", "effects": {"dx": -5}},
+    {"id": 77, "question": "Если существует налогообложение, церкви должны облагаться налогом наравне с другими учреждениями.", "effects": {"dx": -5}},
+    {"id": 78, "question": "Эволюция — это факт.", "effects": {"dx": -5}},
+
+    // Социальные изменения - Консерватизм
+    {"id": 79, "question": "Быстрые изменения часто ухудшают жизнь людей.", "effects": {"dy": 5}},
+    {"id": 80, "question": "Реформы должны проходить постепенно и медленно.", "effects": {"dy": 5}},
+    {"id": 81, "question": "Все реформы должны быть мирными.", "effects": {"dy": 5}},
+    {"id": 82, "question": "Иногда морально оправдано подавлять революции или протесты силой.", "effects": {"dy": 5}},
+    {"id": 83, "question": "Политические лидеры должны менять систему как можно меньше во время своего срока.", "effects": {"dy": 5}},
+
+    // Социальные изменения - Реформизм
+    {"id": 84, "question": "Долгосрочное мышление важнее краткосрочного.", "effects": {"dy": -5}},
+    {"id": 85, "question": "Текущая политическая система в моей стране несовершенна.", "effects": {"dy": -5}},
+    {"id": 86, "question": "Мы должны избегать задержек в политических реформах и изменениях.", "effects": {"dy": -5}},
+    {"id": 87, "question": "Если дело справедливо, и мирные реформы не работают, следует рассмотреть возможность революции или более решительных мер.", "effects": {"dy": -5}},
+
+    // Технологическое развитие - Замедление
+    {"id": 88, "question": "Технологии негативно влияют на современное общество.", "effects": {"ex": -5}},
+    {"id": 89, "question": "Промышленная революция и её последствия стали катастрофой для человечества.", "effects": {"ex": -5}},
+    {"id": 90, "question": "Использование генетической модификации животных и растений должно быть минимальным.", "effects": {"ex": -5}},
+    {"id": 91, "question": "Современность и социальный прогресс привели к снижению счастья и утрате смысла жизни.", "effects": {"ex": -5}},
+    {"id": 92, "question": "Общество было лучше в прошлом, чем сегодня.", "effects": {"ex": -5}},
+
+    // Технологическое развитие - Ускорение
+    {"id": 93, "question": "Если искусственный интеллект может управлять лучше людей, то он должен управлять.", "effects": {"ex": -5}},
+    {"id": 94, "question": "Генетическая модификация сельскохозяйственных культур может предотвратить последствия засух и наводнений.", "effects": {"ex": -5}},
+    {"id": 95, "question": "Автоматизация крайне полезна для общества.", "effects": {"ex": -5}},
+    {"id": 96, "question": "Генетическая модификация людей приносит пользу.", "effects": {"ex": -5}},
+    {"id": 97, "question": "Социальный прогресс движется в правильном направлении.", "effects": {"ex": -5}},
+    {"id": 98, "question": "Мы должны принимать современные технологии, а не избегать их.", "effects": {"ex": -5}},
+
+    // Трансгуманизм
+    {"id": 99, "question": "Преодоление физических ограничений с помощью технологий принесёт пользу человечеству.", "effects": {"ey": 5}},
+    {"id": 100, "question": "Трансгуманизм станет неизбежным в ближайшем будущем для большинства стран.", "effects": {"ey": 5}},
+    {"id": 101, "question": "Люди слишком обеспокоены физическими модификациями человека в наши дни.", "effects": {"ey": 5}},
+
+    // Примитивизм
+    {"id": 102, "question": "Технологии, улучшающие умственные и физические способности, не должны использоваться в любом политическом устройстве.", "effects": {"ey": -5}},
+    {"id": 103, "question": "Риски трансгуманизма перевешивают его преимущества.", "effects": {"ey": -5}},
+    {"id": 104, "question": "Трансгуманизм не требуется ни одной стране в течение следующих 50 лет.", "effects": {"ey": -5}},
+    {"id": 105, "question": "Принципы права должны быть кодифицированы в удобную для использования систему.", "effects": {"fx": 5}},
+    {"id": 106, "question": "Если существует правовая система, законодатели и юристы должны иметь больше влияния, чем судьи.", "effects": {"fx": 5}},
+
+    // Правовая система - Общее право
+    {"id": 107, "question": "Суды должны ссылаться на предыдущие судебные решения.", "effects": {"fx": -5}},
+    {"id": 108, "question": "Если существуют судьи и законодатели, судьи должны иметь больше власти, чем законодатели.", "effects": {"fx": -5}},
+    {"id": 109, "question": "Если невозможно принять решение в суде, следует ссылаться на аналогичные дела в прошлом.", "effects": {"fx": -5}},
+    {"id": 110, "question": "Необычные дела нельзя решать с помощью писаного закона.", "effects": {"fx": -5}},
+
+    // Подход к наказанию - Карательный
+    {"id": 111, "question": "Система, ориентированная на реабилитацию, несправедлива к жертвам преступлений.", "effects": {"fy": 5}},
+    {"id": 112, "question": "Смертная казнь оправдана в некоторых случаях.", "effects": {"fy": 5}},
+    {"id": 113, "question": "Некоторые преступления настолько серьезны, что заслуживают пожизненного заключения без права на освобождение.", "effects": {"fy": 5}},
+    {"id": 114, "question": "В тюрьмах должно быть больше наказаний, чем удобств.", "effects": {"fy": 5}},
+
+    // Подход к наказанию - Реабилитационный
+    {"id": 115, "question": "Каждый человек заслуживает второго шанса.", "effects": {"fy": -5}},
+    {"id": 116, "question": "Основная цель тюрем должна быть реабилитация заключенных.", "effects": {"fy": -5}},
+    {"id": 117, "question": "Освобождение из тюрьмы должно быть возможным даже для тех, кто совершил серьёзные преступления, если они доказали своё исправление.", "effects": {"fy": -5}},
+    {"id": 118, "question": "Улучшение условий в тюрьмах поможет уменьшить рецидив преступлений.", "effects": {"fy": -5}},
+
+    // Социальное равенство - Иерархия
+    {"id": 119, "question": "Неравенство естественно и неизбежно.", "effects": {"gx": 5}},
+    {"id": 120, "question": "Люди, которые приносят большую пользу обществу, заслуживают больших наград.", "effects": {"gx": 5}},
+
+    // Социальное равенство - Равенство
+    {"id": 121, "question": "Мы должны стремиться к полному равенству результатов, а не только возможностей.", "effects": {"gx": -5}},
+    {"id": 122, "question": "Экономические классы должны быть упразднены.", "effects": {"gx": -5}},
+
+    // Культурная ассимиляция - Ассимиляция
+    {"id": 123, "question": "Мигранты должны ассимилироваться в доминирующую культуру страны.", "effects": {"gy": 5}},
+    {"id": 124, "question": "Общественная сплочённость важнее культурного разнообразия.", "effects": {"gy": 5}},
+
+    // Культурная ассимиляция - Мультикультурализм
+    {"id": 125, "question": "Мигранты должны иметь возможность сохранять свою культуру, даже если она отличается от доминирующей.", "effects": {"gy": -5}},
+    {"id": 126, "question": "Культурное разнообразие делает общество сильнее.", "effects": {"gy": -5}},
+
+    // Компромисс - Прагматизм
+    {"id": 127, "question": "Политики должны идти на компромиссы ради общего блага.", "effects": {"hx": -5}},
+    {"id": 128, "question": "Компромиссы часто необходимы для достижения прогресса.", "effects": {"hx": -5}},
+
+    // Компромисс - Принципиальность
+    {"id": 129, "question": "Лучше придерживаться своих принципов, даже если это замедляет прогресс.", "effects": {"hx": 5}},
+    {"id": 130, "question": "Компромиссы с ошибочными идеологиями недопустимы.", "effects": {"hx": 5}},
+
+    // Стратегия - Переходное государство
+    {"id": 131, "question": "Для достижения идеального общества может потребоваться временное авторитарное правление.", "effects": {"hy": 5}},
+    {"id": 132, "question": "Некоторые изменения могут потребовать жёстких мер на переходном этапе.", "effects": {"hy": 5}},
+
+    // Стратегия - Постепенная эволюция
+    {"id": 133, "question": "Изменения должны происходить постепенно, чтобы избежать нестабильности.", "effects": {"hy": -5}},
+    {"id": 134, "question": "Любая форма авторитаризма вредна, даже как временная мера.", "effects": {"hy": -5}},
+
+    // Радикализм - Умеренность
+    {"id": 135, "question": "Избегание крайностей более эффективно, чем радикальные меры.", "effects": {"ix": -5}},
+    {"id": 136, "question": "Политический экстремизм приводит к нестабильности и насилию.", "effects": {"ix": -5}},
+
+    // Радикализм - Экстремизм
+    {"id": 137, "question": "Иногда только радикальные меры могут привести к настоящим переменам.", "effects": {"ix": 5}},
+    {"id": 138, "question": "Моя идеология может считаться экстремальной, но она необходима для решения проблем.", "effects": {"ix": 5}},
+
+    // Политическая активность - Пассивность
+    {"id": 139, "question": "Политика мне скучна или безразлична.", "effects": {"iy": -5}},
+    {"id": 140, "question": "Я редко участвую в выборах или протестах.", "effects": {"iy": -5}},
+
+    // Политическая активность - Активность
+    {"id": 141, "question": "Политика — важная часть жизни каждого человека.", "effects": {"iy": 5}},
+    {"id": 142, "question": "Я регулярно участвую в выборах или протестах.", "effects": {"iy": 5}},
+
+    // Индивидуализм / Коллективизм
+    {"id": 143, "question": "Быть самодостаточным человеком — это положительное качество.", "effects": {"ja": 5}},
+    {"id": 144, "question": "Люди должны работать сообща, даже если это требует жертв от отдельных личностей.", "effects": {"ja": -5}},
+
+    // Мирные изменения / Революция
+    {"id": 145, "question": "Изменение статус-кво мирными средствами предпочтительнее насильственных методов.", "effects": {"jb": -5}},
+    {"id": 146, "question": "Иногда революция — единственный способ добиться справедливости.", "effects": {"jb": 5}},
+
+    // Идеализм / Реализм
+    {"id": 147, "question": "Идеалисты слишком оторваны от реальности.", "effects": {"jc": 5}},
+    {"id": 148, "question": "Без идеалов общество не может развиваться.", "effects": {"jc": -5}},
+
+    // Отмщение / Прощение
+    {"id": 149, "question": "Око за око, зуб за зуб.", "effects": {"jd": 5}},
+    {"id": 150, "question": "Прощение — добродетель, даже если человек виновен.", "effects": {"jd": -5}},
+
+    {"id": 151, "question": "Действие должно считаться правильным или неправильным на основе набора правил и принципов.", "effects": {"jd": -5}},
+
+    // (Заполнено по аналогии с пропущенными ID из контекста)
+    {"id": 155, "question": "Намерение более важно, чем результат, при вынесении моральных оценок.", "effects": {"jd": -5}}
+
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
